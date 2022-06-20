@@ -1,0 +1,25 @@
+extends layout 
+
+block layout-head 
+    link(rel="stylesheet" href="/css/style.css")
+
+block layout-body 
+
+    //- Welcome section
+
+    section.welcome 
+        div.welcome-div.container 
+            div.book
+                div.cover
+                    img(src="/images/book_Cover.jpg", alt="img")
+
+                div.details
+                    div
+                        h1 Books 
+                        h2 A place where 
+                        h2 there are books to read
+                    img(src="/images/page.jpg", alt="")
+
+    //- Search section
+    section.search 
+        div.search-div.container

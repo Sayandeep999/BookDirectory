@@ -1,0 +1,97 @@
+/* Headers: rgb(37, 21, 71) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+body {
+    background: aliceblue;
+    margin: 0;
+    height: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+/* Welcome section */
+
+.welcome {
+    background-image: url('../images/welcome_bg.jpg');
+    height: 100%;
+}
+.welcome-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-div div{
+    position: absolute;
+    top: 120px;
+    text-align: center;
+}
+.welcome-div h1{
+    color: rgb(37, 21, 71);
+    font-family: 'Cormorant Garamond';
+    font-weight: 900;
+    font-size: 80px;
+    margin: 0;
+}
+.welcome-div h2 {
+    color: rgb(37, 21, 71);
+    font-family: 'Cormorant Garamond';
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    top: 50;
+}
+.details div{
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+}
+.book {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+}
+.book:hover{
+    z-index:1;
+    transform: perspective(2000px);
+}
+
+.book .cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 2;
+    transition: 1s;
+}
+.book:hover .cover{
+    transform: rotateY(-135deg);
+}
+.book .cover img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book .details {
+    position: absolute;
+    top: 100;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.details img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
